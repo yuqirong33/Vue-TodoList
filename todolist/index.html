@@ -62,9 +62,9 @@
                                 <span>条未选中</span>
                             </span>
                             <ul class="filters">
-                                <li><a href="#/all" @click="active='all'" class="selected">全部</a></li>
-                                <li><a href="#/active" @click="active='active'">未完成</a></li>
-                                <li><a href="#/completed" @click="active='completed'">已完成</a></li>
+                                <li><a href="#/all" @click="active='all'" :class="active==='all'?'selected':''">全部</a></li>
+                                <li><a href="#/active" @click="active='active'" :class="active==='active'?'selected':''">未完成</a></li>
+                                <li><a href="#/completed" @click="active='completed'" :class="active==='completed'?'selected':''">已完成</a></li>
                             </ul>
 
                         </footer>
